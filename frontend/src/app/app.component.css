@@ -1,0 +1,14 @@
+.form {
+  width: 50vw;
+  height: 50vh;
+  margin:  20vh 22.5vw;
+  background-color: #6e6e6e;
+  text-align: center;
+  padding-top: 5vh;
+  border-radius: 5vh;
+
+}
+
+input {
+  color: white;
+}

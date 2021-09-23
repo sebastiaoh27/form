@@ -1,0 +1,23 @@
+<div class="form" [style.background-color]="success ? 'green': '#6e6e6e'">
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Enter your First and Last name..." [formControl]="name" required>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Enter your email..." [formControl]="email" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Address</mat-label>
+      <input matInput placeholder="Enter your address..." [formControl]="address" required>
+      <mat-error *ngIf="address.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+  </p>
+  <button mat-raised-button (click)="createUser()">Enter</button>
+</div>
