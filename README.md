@@ -1,6 +1,7 @@
 # Form
 This is an example of a form that takes a name, email and address as input, and saves them to a MongoDb database.
-The frontend was made with angular, and the backend with NestJs.
+The frontend was made with angular, and the backend with NestJs.\
+Following MVC pattern.
 
 ## To run Server
 * Run `cd backend`, then `npm install` to install dependencies.
